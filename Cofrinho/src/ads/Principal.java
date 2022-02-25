@@ -3,7 +3,15 @@ package ads;
 public class Principal {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
+		Cofrinho c = new Cofrinho();
+		
+		c.add(new Moeda("Euro", 0.5));
+		c.add(new Moeda("Euro", 1));
+		c.add(new Moeda("Euro", 0.1));
+		c.add(new Moeda("Euro", 0.05));
+		
+		System.out.println("O total no cofrinho é: " + c.calculaTotal());
 
 	}
 
